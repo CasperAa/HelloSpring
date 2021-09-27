@@ -38,13 +38,12 @@ public class ZellersCongruence {
         j is the century:  year/100
         k is the year of the century:  year%100
          */
-        int q = day;
-        int m = month;
+
         int k = year % 100;
         int j = year / 100;
 
         //Formel
-        int h = q + 13*(m + 1) / 5 + k + k / 4 + j / 4 + 5 * j;
+        int h = day + 13*(month + 1) / 5 + k + k / 4 + j / 4 + 5 * j;
 
         //d is the day of the week
         int d = h % 7;
